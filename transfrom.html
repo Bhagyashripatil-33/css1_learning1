@@ -17,19 +17,99 @@
            border: 3px solid black;
            height: 200px;
            width: 200px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+           font-size: 30px;
+           transition: transform 1s ease;
         }
+        .box1:hover{
+            transform: translate(125px,125px);
+        }
+        .box2:hover{
+            transform: translate(150px);
+        }
+        .box3:hover{
+            transform: translate(150px);
+        }
+                .box4:hover{
+            transform: rotate(720deg);
+        }
+                .box5:hover{
+            transform:skewX(20deg);
+        }
+                .box6:hover{
+            transform:skewY(20deg);
+        }
+                .box7:hover{
+            transform:skew(20deg,20deg);
+        }
+                        .box8:hover{
+            transform:scale(1.2) ;
+        }
+                        .box9:hover{
+            transform:scale(1.2) rotate(90deg) translate(100px);
+                        }
+.img-wrapper{
+    width: 500px;
+    height: 350px;
+    border: 2px;
+    position: relative;
+    border: 2px solid brown;
+    overflow: hidden;
+
+}
+.inner-img{
+    width: 500px;
+    height: 200px;
+    transform: 3s;
+}
+.inner-img:hover{
+    transform: scale(1.2);
+}
+
+
+.img1{
+    width: 500x;
+    height: 250px;
+    border: 2px;
+    position: relative;
+    border: 2px solid skyblue;
+    overflow: hidden;
+
+
+}
+.inner1{
+    width: 500px;
+    height: 250px;
+    transform: 2s;
+}
+.inner1:hover{
+    transform: scale(1.2) rotate(90deg) ;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2" ></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box6"></div>
-        <div class="box box7"></div>
-        
+        <div class="box box1">transition X & Y</div>
+        <div class="box box2" >transition X</div>
+        <div class="box box3">transition Y</div>
+        <div class="box box4">rotate</div>
+        <div class="box box5">slkewX</div>
+        <div class="box box6">slkewy</div>
+         <div class="box box7">skew</div>
+        <div class="box box8">scale</div>
+        <div class="box box9">multiple</div>
+        <div class="img-wrapper">
+            <img src="img/b2.jpg" class="inner-img" alt="image">
+            
+            </div>
+            <div class="img1">
+                <img src="img/bp.jpg" class="inner1" alt="image">
+                </div>
+
     </div>
 </body>
 </html>
